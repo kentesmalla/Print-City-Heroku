@@ -1,0 +1,164 @@
+.nav{
+  width: 100%;
+  height: 40px;
+  background-color:#1a1a1a;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: 0.1s;
+  z-index: 5;
+}
+.nav li {
+  text-align: center;
+  display: inline;
+  text-decoration: none;
+  color:#cccccc;
+  padding-right: 50px;
+  padding-bottom: 2px;
+  margin-left: 0px;
+  transition: 0.1s;
+}
+.nav ul{
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.nav li:hover{
+  border-bottom: solid;
+  border-bottom-color: #1386f1;
+}
+.nav li:hover a{
+  color:white;
+}
+.nav a{
+  transition: 0.1s;
+  text-decoration: none;
+  color:#cccccc;
+}
+#apppage{
+  position: relative;
+}
+#back{
+  top:0px;
+  position: relative;
+  background-image: url("../img/landing.jpg");
+  width: 100%;
+  height: 700px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#backtext{
+  position: relative;
+  top:200px;
+  height: 100%;
+}
+#backtext h2{
+
+  color: #1a1a1a;
+  text-align: center;
+}
+#backtext p{
+  text-align: center;
+}
+.titleback{
+  background-color: #1a1a1a;
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 0px;
+}
+.titleback h4{
+  color:white;
+}
+.gallery{
+  height: 300px;
+  width: 100%;
+}
+.gallery img{
+  display: inline;
+  height: 300px;
+  width: 300px;
+}
+.card{
+  height: 230px;
+  width: 100%;
+
+}
+.card-image img{
+  height: 230px;
+  width: 100%;
+}
+
+.card:hover img{
+  transition: 0.1s;
+  opacity: 0.7;
+}
+
+#hot .card{
+  height: 500px;
+  position: relative;
+}
+#hot .card img{
+  height: 500px;
+}
+
+#print{
+  position: relative;
+  top:5px;
+}
+.hrdark{
+  width: 100%;
+  background-color:  #1a1a1a;
+  height: 50px;
+}
+.feat {
+  text-align: center;
+}
+#printpageprint img{
+  
+  width: 100%;
+}
+#printpageprint h1{
+  text-align: center;
+}
+#thumbnail img{
+  max-height: 500px;
+  max-width: 400px;
+}
+#cartpage p{
+  margin-top: 50px;
+}
+#cartpage{
+  height: 360px;
+}
+#added img{
+  height: 100px;
+  width: 100px;
+}
+#editpage{
+  margin-top: 10px;
+}
+#search{
+  color:white;
+}
+
+#apppage, #back, #print,#printpage,#cartpage,#editpage,#addPage {
+  animation-name: opening;
+  animation-duration: 0.4s;
+}
+@keyframes opening{
+  0%{opacity: 0.5;margin-top: -100px;}
+  70%{opacity: 0.7;margin-bottom: -10px;}
+  75%{opacity: 0.9;margin-bottom: 10px;}
+  100%{opacity: 1;margin-bottom: 0px}
+}
+#addlist{
+  animation-name: slide;
+  animation-duration: 0.5s;
+  transition: 0.5s;
+}
+@keyframes slide{
+  from{opacity: 0;margin-top:100px;}
+  to{opacity: 1; margin-top:0px;}
+}
